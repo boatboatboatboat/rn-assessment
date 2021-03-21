@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {Text, View, useColorScheme} from "react-native";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchUser, UserLoadStatus} from "../../reducers/users";
+import {UserLoadStatus, fetchUser} from "../../reducers/users";
 import getStyles from "./styles";
 
 export function PostItem(props) {

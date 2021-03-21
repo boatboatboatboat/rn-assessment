@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import {ScrollView, Text, View, useColorScheme} from "react-native";
 import {useDispatch, useSelector} from "react-redux";
+import {PostStatus, fetchPost} from "../../reducers/posts";
 import {fetchUser} from "../../reducers/users";
-import {fetchPost, PostStatus} from "../../reducers/posts";
 import getStyles from "./styles";
 
 export function DetailedPost({route}) {
@@ -17,7 +17,8 @@ export function DetailedPost({route}) {
     );
 
     useEffect(() => {
-        // Fetch the user if they aren't in our store yet.
+        // Fetch the post or user if they aren't in our store yet.
+        // We must fetch the post before we can fetch the user.
         if (post == null) {
             dispatch(fetchPost(postId));
         } else if (user == null) {
@@ -28,7 +29,7 @@ export function DetailedPost({route}) {
     if (post == null) {
         // If for whatever reason we can't load the post,
         // show an error message.
-        // This should never happen though.
+        // This should never happen.
         return (
             <View style={styles.errorBackground}>
                 <Text style={styles.errorMessage}>

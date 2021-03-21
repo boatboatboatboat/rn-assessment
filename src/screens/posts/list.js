@@ -1,7 +1,7 @@
 import React from "react";
 import {FlatList, Pressable, Text, View, useColorScheme} from "react-native";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchPosts, PostStatus} from "../../reducers/posts";
+import {PostStatus, fetchPosts} from "../../reducers/posts";
 import {PostItem} from "./item";
 import getStyles from "./styles";
 
@@ -46,16 +46,16 @@ export function PostList({navigation}) {
         );
     };
 
-    const postsInReverseIdOrder = [...posts].sort((x, y) => y.id > x.id);
-
     const listItemSeparator = () => {
         return <View style={styles.listItemSeparator} />;
     };
 
+    const postsSortedByIdDescending = [...posts].sort((x, y) => y.id > x.id);
+
     return (
         <View style={styles.listBackground}>
             <FlatList
-                data={postsInReverseIdOrder}
+                data={postsSortedByIdDescending}
                 renderItem={renderPressablePostItem}
                 refreshing={status === PostStatus.Loading}
                 onRefresh={() => dispatch(fetchPosts())}

@@ -9,8 +9,8 @@ import {
 import {createStackNavigator} from "@react-navigation/stack";
 import {fetchPosts} from "./reducers/posts";
 import {DetailedPost} from "./screens/detail";
-import store from "./store";
 import {PostList} from "./screens/posts";
+import store from "./store";
 
 const Stack = createStackNavigator();
 
