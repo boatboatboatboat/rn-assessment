@@ -35,7 +35,10 @@ export function PostList({navigation}) {
                         return (
                             <>
                                 {postItem}
-                                <View style={styles.itemPressedOverlay} />
+                                <View
+                                    style={styles.itemPressedOverlay}
+                                    opacity={0.2}
+                                />
                             </>
                         );
                     } else {

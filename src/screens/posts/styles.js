@@ -28,7 +28,7 @@ export function getStyles(theme) {
         },
         itemPressedOverlay: {
             ...StyleSheet.absoluteFillObject,
-            backgroundColor: "rgba(255,255,255,0.2)",
+            backgroundColor: Colors.foreground,
         },
         itemTitle: {
             color: Colors.foreground,
