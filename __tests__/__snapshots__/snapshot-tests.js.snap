@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests Detailed post snapshot 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderColor": "rgb(216, 216, 216)",
+      "borderTopWidth": 0.5,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingHorizontal": 16,
+          "paddingTop": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "rgb(28, 28, 30)",
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        hello!
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "rgb(28, 28, 30)",
+          }
+        }
+      >
+        by 
+        Other tester
+         (
+        Usertest
+        )
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "rgb(28, 28, 30)",
+          "paddingHorizontal": 16,
+        }
+      }
+    >
+      this is a body
+    </Text>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Snapshot tests Posts list snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(242, 242, 242)",
+      "borderColor": "rgb(216, 216, 216)",
+      "borderTopWidth": 0.5,
+      "flexGrow": 1,
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListEmptyComponent={
+      <Text
+        style={
+          Object {
+            "color": "rgb(28, 28, 30)",
+            "marginVertical": 1,
+            "padding": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        There are no posts!
+      </Text>
+    }
+    data={
+      Array [
+        Object {
+          "body": "check getPosts url",
+          "id": 42,
+          "title": "THIS IS a TITLE",
+          "userId": 3,
+        },
+        Object {
+          "body": "this is a body",
+          "id": 4,
+          "title": "hello!",
+          "userId": 5,
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onRefresh={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    refreshing={false}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgb(255, 255, 255)",
+                "padding": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "rgb(28, 28, 30)",
+                  "fontSize": 20,
+                }
+              }
+            >
+              THIS IS a TITLE
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "rgb(28, 28, 30)",
+                }
+              }
+            >
+              by 
+              Test name
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "rgb(216, 216, 216)",
+              "height": 1,
+              "width": "100%",
+            }
+          }
+        />
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgb(255, 255, 255)",
+                "padding": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "rgb(28, 28, 30)",
+                  "fontSize": 20,
+                }
+              }
+            >
+              hello!
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "rgb(28, 28, 30)",
+                }
+              }
+            >
+              by 
+              Other tester
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Snapshot tests Simple item snapshot with invalid id 1`] = `<View />`;
+
+exports[`Snapshot tests Simple item snapshot with valid id 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgb(28, 28, 30)",
+        "fontSize": 20,
+      }
+    }
+  >
+    hello!
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "rgb(28, 28, 30)",
+      }
+    }
+  >
+    by 
+    Other tester
+  </Text>
+</View>
+`;
