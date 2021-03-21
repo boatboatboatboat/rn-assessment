@@ -3,6 +3,11 @@ Simple React Native demo application that lists posts.
 
 ## Build instructions
 
+### Installing dependencies
+```bash
+npm install
+```
+
 ### Android
 #### Windows/macOS/Linux (Release)
 ```bash
